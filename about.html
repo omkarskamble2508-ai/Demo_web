@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Farm Fresh Fruits & Vegetables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            background-color: #F9FBF5;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            border: 2px solid #4CAF50;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 15px solid #4CAF50;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .name {
+            text-align: left;
+            font-size: 50px;
+            font-style: oblique;
+            flex: 1;
+            color: rgb(2, 67, 2);
+        }
+
+        .menu {
+            width: 700px;
+            height: 40px;
+            text-align: center;
+            line-height: 30px;
+            padding-bottom: 20px;
+            border-radius: 10px;
+            margin-right: 40px;
+        }
+
+        .menu li {
+            display: inline-block;
+            margin-left: 20px;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .menu a:hover {
+            color: rgb(50, 143, 35);
+        }
+
+        .banner {
+            height: 450px;
+            border-bottom: 2px solid black;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            background-color: #C8E6C9;
+        }
+
+        .content {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+            border-bottom: 2px solid #4CAF50;
+            background-color: #C8E6C9;
+        }
+
+        .left {
+            width: 30%;
+
+
+        }
+
+        .wel {
+            padding: 15px;
+            font-size: 28px;
+            font-weight: bold;
+            color: rgb(2, 67, 2);
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            background-color: #E8F5E9;
+        }
+
+        .small-box {
+            border: 2px solid black;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 20px;
+            font-size: 20px;
+            line-height: 1.6;
+            background-color: #E8F5E9;
+        }
+
+        .right {
+            width: 70%;
+            border: 2px solid black;
+            min-height: 260px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: antiquewhite;
+        }
+
+        .right img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .footer-boxes {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            border-bottom: 2px solid black;
+        }
+
+        .footer-box {
+            width: 22%;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+
+        }
+
+        .copyright {
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media(max-width:768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .left,
+            .right {
+                width: 100%;
+            }
+
+            .footer-boxes {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .footer-box {
+                width: 40%;
+
+            }
+
+        }
+
+        @media(max-width:480px) {
+            .header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .menu {
+                width: 100%;
+            }
+
+            .footer-box {
+                width: 100%;
+            }
+
+            .banner {
+                height: 120px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="header">
+            <div class="logo"><img src="logo1.png" alt="logo" width="150" height="150"></div>
+            <div class="name"><b>Farm Fresh Fruits & Vegetables</b></div>
+            <div class="menu">
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+
+                </ul>
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <div class="banner"><img src="about_banner.png" alt="about banner" width="100%" height="450px"></div>
+
+        <div class="content">
+            <div class="left">
+                <div class="wel">About Us</div>
+                <div class="small-box">
+                    Farm Fresh Fruits & Vegetables is a trusted name in delivering farm-fresh produce directly to your
+                    doorstep. We started with a simple mission — to bring healthy, chemical-free, and naturally grown
+                    fruits and vegetables from local farms to every household.
+                </div>
+                <div class="small-box">
+                    <b>Our Mission</b><br>
+                    To promote healthy eating by providing 100% fresh, organic, and affordable fruits and vegetables
+                    sourced directly from farmers without any middlemen.
+                </div>
+            </div>
+            <div class="right">
+                <img src="about_content.png" alt="about us" width="100%" height="100%">
+            </div>
+        </div>
+
+        <div class="footer-boxes">
+            <div class="footer-box"><img src="Fresh Fruits.jpg" alt="fresh" width="100%" height="200"></div>
+            <div class="footer-box"><img src="Green Vegetables.jpg" alt="fresh" width="100%" height="200"></div>
+            <div class="footer-box"><img src="Root Vegetables.jpg" alt="fresh" width="100%" height="200"></div>
+            <div class="footer-box"><img src="Seasonal Vegetables.jpg" alt="fresh" width="100%" height="200"></div>
+        </div>
+
+        <div class="copyright">
+            @ 2026 Farm Fresh Fruits & Vegetables
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

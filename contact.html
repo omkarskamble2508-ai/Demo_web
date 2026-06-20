@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Farm Fresh Fruits & Vegetables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            background-color: #F9FBF5;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            border: 2px solid #4CAF50;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 15px solid #4CAF50;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .name {
+            text-align: left;
+            font-size: 50px;
+            font-style: oblique;
+            flex: 1;
+            color: rgb(2, 67, 2);
+        }
+
+        .menu {
+            width: 700px;
+            height: 40px;
+            text-align: center;
+            line-height: 30px;
+            padding-bottom: 20px;
+            border-radius: 10px;
+            margin-right: 40px;
+        }
+
+        .menu li {
+            display: inline-block;
+            margin-left: 20px;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .menu a:hover {
+            color: rgb(50, 143, 35);
+        }
+
+        .banner {
+            height: 450px;
+            border-bottom: 2px solid black;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            background-color: #C8E6C9;
+        }
+
+        .content {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+            border-bottom: 2px solid #4CAF50;
+            background-color: #C8E6C9;
+        }
+
+        .left {
+            width: 30%;
+
+
+        }
+
+        .wel {
+            padding: 15px;
+            font-size: 28px;
+            font-weight: bold;
+            color: rgb(2, 67, 2);
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            background-color: #E8F5E9;
+        }
+
+        .small-box {
+            border: 2px solid black;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 20px;
+            font-size: 20px;
+            line-height: 1.6;
+            background-color: #E8F5E9;
+        }
+
+        .small-box b {
+            color: rgb(2, 67, 2);
+        }
+
+        .right {
+            width: 70%;
+            border: 2px solid black;
+            min-height: 260px;
+            padding: 30px;
+            background-color: antiquewhite;
+        }
+
+        .form-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: rgb(2, 67, 2);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: rgb(50, 143, 35);
+        }
+
+        .footer-boxes {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            border-bottom: 2px solid black;
+        }
+
+        .footer-box {
+            width: 22%;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+
+        }
+
+        .copyright {
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media(max-width:768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .left,
+            .right {
+                width: 100%;
+            }
+
+            .footer-boxes {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .footer-box {
+                width: 40%;
+
+            }
+
+        }
+
+        @media(max-width:480px) {
+            .header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .menu {
+                width: 100%;
+            }
+
+            .footer-box {
+                width: 100%;
+            }
+
+            .banner {
+                height: 120px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="header">
+            <div class="logo"><img src="logo1.png" alt="logo" width="150" height="150"></div>
+            <div class="name"><b>Farm Fresh Fruits & Vegetables</b></div>
+            <div class="menu">
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+
+                </ul>
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <div class="banner"><img src="contact_banner.png" alt="contact banner" width="100%" height="450px"></div>
+
+        <div class="content">
+            <div class="left">
+                <div class="wel">Contact Us</div>
+                <div class="small-box">
+                    <b>📍 Address:</b><br>
+                    Farm Fresh Fruits & Vegetables,<br>
+                    Main Market Road,<br>
+                    Near Bus Stand, Solankur
+                </div>
+                <div class="small-box">
+                    <b>📞 Phone:</b><br>
+                    +91 98765 43210<br><br>
+                    <b>📧 Email:</b><br>
+                    farmfresh@gmail.com
+                </div>
+                <div class="small-box">
+                    <b>🕐 Working Hours:</b><br>
+                    Monday - Saturday: 7:00 AM - 9:00 PM<br>
+                    Sunday: 8:00 AM - 2:00 PM
+                </div>
+            </div>
+            <div class="right">
+                <div class="form-title">Send Us a Message</div>
+                <form>
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-boxes">
+            <div class="footer-box"><img src="Fresh Fruits.jpg" alt="fresh fruits" width="100%" height="200"></div>
+            <div class="footer-box"><img src="Green Vegetables.jpg" alt="green vegetables" width="100%" height="200"></div>
+            <div class="footer-box"><img src="Root Vegetables.jpg" alt="root vegetables" width="100%" height="200"></div>
+            <div class="footer-box"><img src="Seasonal Vegetables.jpg" alt="seasonal vegetables" width="100%" height="200"></div>
+        </div>
+
+        <div class="copyright">
+            @ 2026 Farm Fresh Fruits & Vegetables
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
