@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Farm Fresh Fruits & Vegetables</title>
     <style>
-        body{
+        body {
             font-family: Arial, sans-serif;
             padding: 10px;
-            background-color:#F9FBF5;
+            background-color: #F9FBF5;
 
         }
-       /* *{
-            margin:0;
+
+        * {
+            margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }*/
-        .container{
-            width: 100%;
-            border: 2px solid  #4CAF50;
         }
-        .header{
+
+               .container {
+            width: 100%;
+            border: 2px solid #4CAF50;
+        }
+
+        .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -28,114 +32,111 @@
             border-bottom: 15px solid #4CAF50;
         }
 
-        .logo{
-            width: 90px;
-            height: 60px;
+        .logo {
+            width: 150px;
+            height: 150px;
             text-align: center;
-            /* line-height: 0px; */
-            margin-bottom: 70px;
-
+            flex-shrink: 0;
         }
-        .name{
+
+        .name {
             text-align: left;
-            font-size:50px;
+            font-size: 50px;
             font-style: oblique;
-            padding-right: 400px;
+            flex: 1;
             color: rgb(2, 67, 2);
-
         }
-        .menu{
+
+        .menu {
             width: 700px;
             height: 40px;
-            /* background: silver;s */
             text-align: center;
-            line-height:30px ;
-            padding-bottom:20px;
+            line-height: 30px;
+            padding-bottom: 20px;
             border-radius: 10px;
-            /* border: 2px double black; */
             margin-right: 40px;
         }
-        
-        .menu li{
+
+        .menu li {
             display: inline-block;
             margin-left: 20px;
-            
+
         }
 
-        .menu a{
+        .menu a {
             text-decoration: none;
-            color:black;
+            color: black;
             font-weight: bold;
             font-size: 30px;
         }
-        .menu a:hover{
-            color:rgb(50, 143, 35);
+
+        .menu a:hover {
+            color: rgb(50, 143, 35);
         }
-        .banner
-        {
-            height:450px;
+
+        .banner {
+            height: 450px;
             border-bottom: 2px solid black;
             justify-content: center;
             align-items: center;
             font-size: 24px;
-            background-color:#C8E6C9;
-        }
-
-
-    
-        .content{
-            display:flex;
-            padding: 20px;
-            gap:20px;
-            border-bottom: 2px solid #4CAF50 ;
             background-color: #C8E6C9;
         }
 
-        .left{
+        .content {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+            border-bottom: 2px solid #4CAF50;
+            background-color: #C8E6C9;
+        }
+
+        .left {
             width: 30%;
 
 
         }
 
-        .wel{
-
-            height:300px;
-            margin-right: 30px;
-
+        .wel {
+            padding: 15px;
+            font-size: 28px;
+            font-weight: bold;
+            color: rgb(2, 67, 2);
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            background-color: #E8F5E9;
         }
 
-        .small-box{
-            height: 400px;
+        .small-box {
             border: 2px solid black;
             margin-bottom: 20px;
-            display: flex; 
-            justify-content: center;
-            /* align-items: center; */
+            padding: 20px;
             border-radius: 20px;
-            font-size: 25px;
-            
-
-
+            font-size: 20px;
+            line-height: 1.6;
+            background-color: #E8F5E9;
         }
 
-        .right{
+        .right {
             width: 70%;
             border: 2px solid black;
             min-height: 260px;
-            display:flex;
+            display: flex;
             justify-content: center;
             align-items: center;
             background-color: antiquewhite;
         }
 
-        .footer-boxes{
+        .footer-boxes {
             display: flex;
             justify-content: space-around;
             padding: 20px;
             border-bottom: 2px solid black;
         }
 
-        .footer-box{
+        .footer-box {
             width: 22%;
             height: 200px;
             border: 2px solid black;
@@ -146,58 +147,55 @@
 
         }
 
-    
-
-        .copyright{
+        .copyright {
             text-align: center;
             padding: 15px;
         }
 
-        @media(max-width:768px)
-        {
-            .content{
-                flex-direction:column;
+        @media(max-width:768px) {
+            .content {
+                flex-direction: column;
             }
+
             .left,
-            .right{
+            .right {
                 width: 100%;
             }
 
-            .footer-boxes{
+            .footer-boxes {
                 flex-wrap: wrap;
-                gap:15px;
+                gap: 15px;
             }
-            .footer-box{
+
+            .footer-box {
                 width: 40%;
-                
+
             }
 
         }
 
-        @media(max-width:480px)
-        {
-            .header{
+        @media(max-width:480px) {
+            .header {
                 flex-direction: column;
                 gap: 15px;
             }
 
-            .menu{
+            .menu {
                 width: 100%;
             }
 
-            .footer-box{
+            .footer-box {
                 width: 100%;
             }
-            .banner{
+
+            .banner {
                 height: 120px;
                 font-size: 18px;
             }
         }
-
-
-
     </style>
 </head>
+
 <body>
 
 
@@ -205,55 +203,59 @@
         <div class="header">
             <div class="logo"><img src="logo1.png" alt="logo" width="150" height="150"></div>
             <div class="name"><b>Farm Fresh Fruits & Vegetables</b></div>
-                <div class="menu">
+            <div class="menu">
 
-                    <ul>
-                        <li ><a href="index.html">Home</a></li>
-                        <li ><a href="about.html">About</a></li>
-                        <li ><a href="services.html">Services</a></li>
-                        <li ><a href="contact.html">Contact</a></li>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
 
 
-                    </ul>
+                </ul>
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <div class="banner"><img src="add3.png" alt="add3" width="100%" height="450px"></div>
+
+        <div class="content">
+            <div class="left">
+                <div class="wel">Welcome to Fresh Harvest!</div>
+                <div class="small-box">
+                    We provide a wide variety of fresh fruits and vegetables directly from farms. Our catalogue helps
+                    customers explore healthy, nutritious, and high-quality produce with detailed information about each
+                    item.
                 </div>
-
-
-            
-                
-          </div>
-        
-    
-    
-    <div class="banner"><img src="add3.png" alt="add3" width="100%" height="450px"></div>
-
-    <div class="content">
-        <div class="left">
-            
-            <div class="small-box">We provide a wide variety of fresh fruits and vegetables<br> directly from farms. Our catalogue helps customers explore<br> healthy, nutritious, and high-quality produce with detailed <br>information about each item.
-            <div class="wel">Welcome to Fresh Harvest!</div>
+            </div>
+            <div class="right">
+                <video controls width="100%" height="400px">
+                    <source src="Video.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
-          
+
+        <div class="footer-boxes">
+            <div class="footer-box"><img src="Fresh Fruits.jpg" alt="fresh fruits" width="100%" height="200"></div>
+            <div class="footer-box"><img src="Green Vegetables.jpg" alt="green vegetables" width="100%" height="200"></div>
+            <div class="footer-box"><img src="Root Vegetables.jpg" alt="root vegetables" width="100%" height="200"></div>
+            <div class="footer-box"><img src="Seasonal Vegetables.jpg" alt="seasonal vegetables" width="100%" height="200"></div>
         </div>
-        <div class="right"><video controls height="430px" width="100%">
-            <source src="Video.mp4" type="video/mp4" >
-        </video></div>
+
+        <div class="copyright">
+            @ 2026 Farm Fresh Fruits & Vegetables
+        </div>
+
+
     </div>
 
-    <div class="footer-boxes">
-        <div class="footer-box"><img src="Fresh Fruits.jpg" alt="fresh" width="100%" height="200"></div>
-        <div class="footer-box"><img src="Green Vegetables.jpg" alt="fresh" width="100%" height="200"></div>
-        <div class="footer-box"><img src="Root Vegetables.jpg" alt="fresh" width="100%" height="200"></div>
-        <div class="footer-box"><img src="Seasonal Vegetables.jpg" alt="fresh" width="100%" height="200"></div>
-    </div>
 
-    <div class="copyright">
-        @ 2026 Farm Fresh Fruits & Vegetables
-    </div> 
 
-    
-    </div>
-    
-
-   
 </body>
+
 </html>
